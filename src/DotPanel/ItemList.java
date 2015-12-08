@@ -181,9 +181,9 @@ public class ItemList {
                 projectileList.get(j).remove=true;
               }
             }
-            if(space) {
+            //if(space) {
               zedList.get(i).seekObjective(zombieDest, humanList);
-            }
+            //}
           }
 	}
         // Collision Detection

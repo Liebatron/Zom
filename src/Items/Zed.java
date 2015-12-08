@@ -37,7 +37,6 @@ public class Zed extends Item {
   
   public void seekObjective(Point objective, List<Human> humans) {
     if(!stunned) {
-        System.out.println(objective.x);
         float totalSpeed=Math.abs(xmomentum)+Math.abs(ymomentum);
         boolean seesHuman=false;
         for(int i=0;i<humans.size();i++) {
@@ -65,7 +64,7 @@ public class Zed extends Item {
     }
     if(stunned) {
       respawn++;
-      if(respawn>=70) {
+      if(respawn>=150) {
         stunned=false;
         respawn=0;
       }
